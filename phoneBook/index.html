@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Book</title>
+</head>
+<style>
+    .container{
+        text-align: center;
+        width: 60%;
+        margin: auto;
+    }
+    .Name{
+        margin: 5px;
+        padding: 5px;
+    }
+    table, th{
+        border: 1px solid black;
+        border-collapse: collapse;
+        margin: auto;
+    }
+    th{
+        padding: 5px 20px;
+    }
+    .input{
+        margin: 5px 40px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div>
+            <h2 class="title">Phone Book</h2>
+        <form class="form">
+            <label for="firstName">First Name:</label>
+            <input type="text" class="Name input firstname"><br>
+            <label for="lastName">Last Name:</label>
+            <input type="text" class="Name input lastname"><br>
+            <label for="middleName">Middle Name:</label>
+            <input type="text" class="Name input middlename">
+            <br>
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="number" class="Name input phonenumber"><br>
+            <input type="submit"  value="Submit" class="Name submit">
+        </form>
+        </div>
+            <h3 class="contact">My Contact List</h3>
+            <table>
+                <thead>
+                <tr>
+                     <th>SN</th>
+                    <th>Full Name</th>
+                    <th>Phone Number</th>
+                </tr>
+            </thead>
+            <tbody class="table-list">
+
+            </tbody>
+            </table> 
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
